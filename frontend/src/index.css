@@ -1,0 +1,48 @@
+/* Global Reset and Base Styles */
+:root {
+  --primary-purple: #5b50e6;
+  --primary-purple-dark: #4338ca;
+  --primary-purple-light: #7c72f8;
+  --purple-tint: #f5f3ff;
+  --purple-border: #e0e7ff;
+  
+  --bg-main: #fcfbfe;
+  --bg-card: #ffffff;
+  
+  --text-dark: #1e1b4b;
+  --text-body: #4b5563;
+  --text-muted: #6b7280;
+  
+  --font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --shadow-subtle: 0 4px 20px -2px rgba(91, 80, 230, 0.06), 0 2px 6px -1px rgba(91, 80, 230, 0.04);
+  --shadow-hover: 0 10px 25px -4px rgba(91, 80, 230, 0.12), 0 4px 10px -2px rgba(91, 80, 230, 0.06);
+  --radius-lg: 16px;
+  --radius-md: 12px;
+  --radius-sm: 8px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-main);
+  color: var(--text-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
